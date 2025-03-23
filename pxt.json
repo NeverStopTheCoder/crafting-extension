@@ -25,5 +25,6 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "icon": "https://cdn.makecode.com/blob/5c1928890ff126599e16ef262b4e44714fc228d8/static/libs/multiplayer.png"
 }
