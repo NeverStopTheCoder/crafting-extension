@@ -136,7 +136,7 @@ namespace craftingSystem {
             ddddddddddddddddddddddddddddddddddddffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefffffffddddddddddddddddddddddddddddd
             ddddddddddddddddddddddddddddddddddddddffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeefffffddddddddddddddddddddddddddddddd
         `)
-        open3 == true
+        open3 = true
         grid3 = [null, null, null, null, null, null, null, null, null, null, null, null];
 
         // Draw Grid
