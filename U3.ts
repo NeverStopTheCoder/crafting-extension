@@ -287,17 +287,38 @@ namespace craftingSystem {
         }
         gridSprites3 = [];
         pause(500)
+        let goto3 = sprites.create(img`
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+            . . . . . . . . . . . . . . . .
+        `, SpriteKind.Player)
         // Destroy all item sprites in the grid
         for (let sprite of sprites.allOfKind(SpriteKind.Food)) {
-            sprite.destroy();
+            sprite.follow(goto3)
         }
 
         // Destroy the cursor
         cursor3.destroy();
-
+pause(1000)
+for (let sprite of sprites.allOfKind(SpriteKind.Food)) {
+    sprite.destroy()
+}
         // Place the crafted item in the center (Slot 5)
-        let x = ((4) % 4) * 30 + 40;
-        let y = Math.floor((4) / 4) * 30 + 40;
+        let x = ((4) % 4) * 30 + 80;
+        let y = Math.floor((4) / 4) * 30 + 30;
         craftedSprite3 = sprites.create(craftedImage, SpriteKind.Player);
         craftedSprite3.setPosition(x, y);
         craftedItem = craftedItem;
